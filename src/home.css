@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:ital,wght@1,700&display=swap');
+
+body {
+    min-height: 100%;
+    background-image: url(wall.jpg);
+    }
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+#nav-link{
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    z-index: 100000;
+    width: 100%;
+
+}
+
+
+#nav-link ul{
+display: flex;
+gap: 3rem;
+align-items: center;
+justify-content: center;
+}
+
+li{
+list-style: none;
+text-transform: uppercase;
+font-weight: 500;
+font-size: clamp(1.125rem, 0.6563rem + 1.5vw, 1.5rem);
+letter-spacing: 3px;
+transition: 0.6s;
+}
+
+li a{
+text-decoration: none;
+color: rgb(97, 210, 230);
+border-radius: 1rem;
+padding: 5px 1rem;
+font-family: 'Courier New', Courier, monospace                              ;
+font-size: 18px;
+}
+
+ 
+li a:hover{
+    background-color: rgb(97, 210, 230);
+    color: #fff;
+    
+    }      
+
+.header h1{
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    padding:40px 400px 40px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #8000ff;
+    letter-spacing: 3px;
+    
+    }
+    
+    .header span{
+        color: rgb(97, 210, 230);
+       
+    }
+
+    .section{
+        padding-top: 20rem;
+        padding-left: 10rem;
+        display: flex;
+        position: relative;
+        gap: 5rem;
+     
+    }
+
+    .img img{
+        height: 31rem;
+        width: 100%;
+        max-width: 400px;
+        transform: translateX(-50);
+        position: relative;
+        top: -30rem;
+        left: 36rem;
+        border-radius: 50% 50% 37% 63% / 41% 39% 61% 59% ;
+        opacity: 100%;
+        }
+
+        .img svg{
+            position: absolute;
+            left: 45rem;
+            z-index: -1;
+            height: 26rem;
+            top: -26rem;
+        }
+
+    .interact-section{
+        position: relative;
+        transition: transform 500ms ease-in-out;
+    }
+    
+    .interact-section .img svg:hover{
+        transform: scale(-20px);
+        cursor: pointer;
+    }
+    
+    
+    .intro{
+       position: fixed;
+       font-family: 'Courier New', Courier, monospace;
+        right: 50%;
+    
+    }
+    
+    .intro h2{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: clamp(1rem, -0.625rem + 5.2vw, 2.3rem);
+        color: #fff;
+        position: relative;
+        top: -5rem;
+        padding-left: 10%;
+    }
+    
+    .intro span{
+        font-family: 'Courier New', Courier, monospace;
+        color:  rgb(97, 210, 230);
+    font-weight: bold;
+    font-size: clamp(1.5rem, 0.125rem + 4.4vw, 2.6rem); 
+    letter-spacing: .2px;
+    }
+    
+    .intro h4{
+        color: #fff;
+        padding-left: 10%;
+        width: 3orem;
+        top: -7rem;
+        position: relative;
+        font-size: clamp(0.5rem, 0.1094rem + 1.25vw, 0.8125rem);
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .intro h3{
+        width: 19ch;
+        padding-left: 10%;
+        margin: 0px;
+        animation: typing 2.5s steps(19), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 5px solid #fff;
+        color:  rgb(97, 210, 230);
+        font-size: 3.2rem;
+        position: relative;
+        top: -7rem;
+    }
+
+    @keyframes typing {
+        from{
+            width: 10px;
+        }
+    }
+
+    @keyframes blink{
+        50%{
+            border-color: transparent;
+        }
+    }
+
+    @keyframes slide-in-top {
+        0% {
+          transform: translateY(-50px);
+          opacity: 0;
+        }
+      
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+    .footer h5{
+        color: aqua;
+        font-size: 1.2rem;
+        font-family: 'Dancing Script', cursive;
+        font-family: 'Poppins', sans-serif;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        bottom: -14rem;
+        position: relative;
+    }
+    
+    .footer p{
+        display: flex;
+        justify-content: center;
+        color: aqua;
+        font-size: 1.1rem;
+        position: relative;
+        bottom: -14rem;
+    }
+
+    .links{
+        
+        display: flex;
+        /* flex-direction: column;s */
+        position: relative;
+        top: -20rem;
+        left: 1rem;
+        width: 5rem;
+    }
+    
+    
+    .links a {
+        font-size: clamp(1.25rem, 0rem + 4vw, 2.25rem);
+        padding-right: 10px;
+        padding: 2.57rem;
+    }
+    
+    .links a:hover{
+        scale: 1.2;
+    }
+    
+    .fa-facebook{
+        color: rgb(97, 210, 230);
+    }
+    
+    
+    .fa-github{
+        color: rgb(97, 210, 230);
+    }
+    
+    
+    
+    .fa-envelope{
+        color: rgb(97, 210, 230);
+    }
+    
+    .fa-instagram{
+        color: rgb(97, 210, 230);
+    }
